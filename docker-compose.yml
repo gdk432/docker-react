@@ -1,0 +1,9 @@
+version : '*'
+services:
+  redis-server:
+      image: 'redis'
+  node-app:
+      restart : always
+      build: .
+      ports:
+        - "7172:7171"
